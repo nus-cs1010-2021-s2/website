@@ -1,0 +1,1637 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://nus-cs1010-2021-s2.github.io/website/environments.html">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>Programming Environments - CS1010 Programming Methodology</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.3b61ea93.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-cs1010-programming-environment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://nus-cs1010-2021-s2.github.io/website/" title="CS1010 Programming Methodology" class="md-header-nav__button md-logo" aria-label="CS1010 Programming Methodology">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            CS1010 Programming Methodology
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Programming Environments
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://nus-cs1010-2021-s2.github.io/website/" title="CS1010 Programming Methodology" class="md-nav__button md-logo" aria-label="CS1010 Programming Methodology">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    CS1010 Programming Methodology
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="index.html" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="midterm.html" class="md-nav__link">
+      Midterm
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="final.html" class="md-nav__link">
+      Final
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="pe1.html" class="md-nav__link">
+      PE1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="pe2.html" class="md-nav__link">
+      PE2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+    
+    <label class="md-nav__link" for="nav-6">
+      General
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="General" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        General
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="about.html" class="md-nav__link">
+      About CS1010
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="outcomes.html" class="md-nav__link">
+      Learning Outcomes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="schedule.html" class="md-nav__link">
+      Schedule
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="accounts.html" class="md-nav__link">
+      Accounts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="policies.html" class="md-nav__link">
+      Policies
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+    
+    <label class="md-nav__link" for="nav-7">
+      Notes
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Notes" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Notes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="01-program.html" class="md-nav__link">
+      1. What is a Program?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="02-algo.html" class="md-nav__link">
+      2. Computational Problem & Algorithms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="03-func.html" class="md-nav__link">
+      3. Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="04-type.html" class="md-nav__link">
+      4. Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="05-first-c.html" class="md-nav__link">
+      5. First C Program
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="06-cs1010-io.html" class="md-nav__link">
+      6. CS1010 I/O Library
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="07-arithmetic-ops.html" class="md-nav__link">
+      7. Arithmetic Operations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="08-if-else.html" class="md-nav__link">
+      8. Conditionals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="09-logical-exp.html" class="md-nav__link">
+      9. Logical Expressions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="10-assert.html" class="md-nav__link">
+      10. Assertion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="11-loop.html" class="md-nav__link">
+      11. Loops
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="12-invariant.html" class="md-nav__link">
+      12. Loop Invariant
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="13-call-stack.html" class="md-nav__link">
+      13. Call Stack
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="14-pointers.html" class="md-nav__link">
+      14. Memory Addresses
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="15-array.html" class="md-nav__link">
+      15. Array
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="16-string.html" class="md-nav__link">
+      16. String
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="17-call-by-reference.html" class="md-nav__link">
+      17. Call by Reference
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="18-heap.html" class="md-nav__link">
+      18. Heap
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="19-md-array.html" class="md-nav__link">
+      19. Multi-dimensional Arrays
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="20-macro.html" class="md-nav__link">
+      20. C Preprocessing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="21-assert.html" class="md-nav__link">
+      21. The assert macro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="22-efficiency.html" class="md-nav__link">
+      22. Efficiency
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="23-search.html" class="md-nav__link">
+      23. Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="24-sort.html" class="md-nav__link">
+      24. Sorting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="25-tower.html" class="md-nav__link">
+      25. Tower of Hanoi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="26-permutation.html" class="md-nav__link">
+      26. Permutation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="27-queens.html" class="md-nav__link">
+      27. N Queens
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="28-struct.html" class="md-nav__link">
+      28. Struct
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="29-stdio.html" class="md-nav__link">
+      29. Standard I/O
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+    
+    <label class="md-nav__link" for="nav-8">
+      Exercises
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Exercises" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        Exercises
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="ex00.html" class="md-nav__link">
+      0. Echo, Divide, Quadratic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="ex01.html" class="md-nav__link">
+      1. GCD, Day, Leap
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="ex02.html" class="md-nav__link">
+      2. Binary, Rectangle, Fibonacci
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="ex03.html" class="md-nav__link">
+      3. Weekday, Circle, Histogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="ex04.html" class="md-nav__link">
+      4. Fill, Sudoku
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    
+    <label class="md-nav__link" for="nav-9">
+      Assignments
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Assignments" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon"></span>
+        Assignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="assignment.html" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="as01.html" class="md-nav__link">
+      1. Box, Digits, Suffix, Taxi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="as02.html" class="md-nav__link">
+      2. Collatz, Triangle, Prime, Pattern
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="as03.html" class="md-nav__link">
+      3. ID, Kendall, Max, CountingSort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="as04.html" class="md-nav__link">
+      4. SelectionSort, Mastermind
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="as05.html" class="md-nav__link">
+      5. Contact, Social, Life
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="as06.html" class="md-nav__link">
+      6. Add, Frequency, Permutation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="as07.html" class="md-nav__link">
+      7. Peak, Sort, Inversion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="as08.html" class="md-nav__link">
+      8. Walk, Maze
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="as09.html" class="md-nav__link">
+      9. Digits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="readings.html" class="md-nav__link">
+      Readings
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="c-in-cs1010.html" class="md-nav__link">
+      C in CS1010
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="library.html" class="md-nav__link">
+      CS1010 I/O Library
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="style.html" class="md-nav__link">
+      C Style Convention
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="documentation.html" class="md-nav__link">
+      C Documentation Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="messages.html" class="md-nav__link">
+      Compiler Messages
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16" checked>
+    
+    <label class="md-nav__link" for="nav-16">
+      Software/Tools
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Software/Tools" data-md-level="1">
+      <label class="md-nav__title" for="nav-16">
+        <span class="md-nav__icon md-icon"></span>
+        Software/Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Programming Environments
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="environments.html" class="md-nav__link md-nav__link--active">
+      Programming Environments
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-requirements" class="md-nav__link">
+    Basic Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-command-to-ssh" class="md-nav__link">
+    The Command to SSH
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-pe-hosts-from-outside-soc" class="md-nav__link">
+    Accessing The PE Hosts from Outside SoC
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing The PE Hosts from Outside SoC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-using-soc-vpn" class="md-nav__link">
+    Option 1: Using SoC VPN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-tunneling-through-sunfire" class="md-nav__link">
+    Option 2: Tunneling through Sunfire
+  </a>
+  
+    <nav class="md-nav" aria-label="Option 2: Tunneling through Sunfire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh-through-sunfire" class="md-nav__link">
+    SSH through sunfire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-port-forwarding" class="md-nav__link">
+    SSH Port Forwarding
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-ssh-keys" class="md-nav__link">
+    Setting up SSH Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="unix.html" class="md-nav__link">
+      UNIX
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="clang.html" class="md-nav__link">
+      CLang
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="vim.html" class="md-nav__link">
+      Vim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="tmate.html" class="md-nav__link">
+      TMate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="zoom.html" class="md-nav__link">
+      Zoom
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="archive.html" class="md-nav__link">
+      Older Announcements
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="1819s1.html" class="md-nav__link">
+      18/19 Sem 1
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-requirements" class="md-nav__link">
+    Basic Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-command-to-ssh" class="md-nav__link">
+    The Command to SSH
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-pe-hosts-from-outside-soc" class="md-nav__link">
+    Accessing The PE Hosts from Outside SoC
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing The PE Hosts from Outside SoC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-using-soc-vpn" class="md-nav__link">
+    Option 1: Using SoC VPN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-tunneling-through-sunfire" class="md-nav__link">
+    Option 2: Tunneling through Sunfire
+  </a>
+  
+    <nav class="md-nav" aria-label="Option 2: Tunneling through Sunfire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh-through-sunfire" class="md-nav__link">
+    SSH through sunfire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-port-forwarding" class="md-nav__link">
+    SSH Port Forwarding
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-ssh-keys" class="md-nav__link">
+    Setting up SSH Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="the-cs1010-programming-environment">The CS1010 Programming Environment</h1>
+<p>C is a common programming language and you can find different implementations of C compiler on many platforms.  Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_compilers#C_compilers">lists more than 40 different C compilers</a>.  These different compilers support different processor architecture, operating systems, may behave slightly differently, and may support different features of C standards.  It is therefore important for CS1010 to stick to a single platform and single compiler.</p>
+<p>Our platform of choice is <strong>Ubuntu 18.04 (or later)</strong> using the <code>clang</code> compiler (<strong>version 6.0 or later</strong>).</p>
+<p>The school has provided a list of computing servers for you to use.  You can access them remotely via <code>ssh</code>, or secure shell.  The hosts are named <code>pe111</code>, <code>pe112</code>, ... , <code>pe120</code>.  (<code>pe</code> stands for "programming environment").  We will refer to these servers generally as the <em>PE hosts.</em></p>
+<div class="admonition note">
+<p class="admonition-title">pe115 and pe116</p>
+<p>For this semester, the two servers <code>pe115</code> and <code>pe116</code> are not available.</p>
+</div>
+<p>You can choose which of the <del class="critic">10</del> 8 hosts to use.  You share the same home directory across all the hosts (this home directory, however, is different from that of <code>sunfire</code>).</p>
+<p>For simplicity, the following guide uses <code>pe111</code> in all examples.  Do keep in mind that you can use other hosts for CS1010 to spread out the load.</p>
+<p>While it is possible for you to complete the programming assignments on your own computers, the practical exams are done in a controlled environment using servers similar to the PE hosts.  It is therefore advisable for you to familiarize yourself with accessing the PE servers via <code>ssh</code> and edit your program with either <code>vim</code>.</p>
+<h2 id="basic-requirements">Basic Requirements</h2>
+<ol>
+<li>
+<p>You need to have an SoC UNIX account.  If you do not have one, you can <a href="https://mysoc.nus.edu.sg/~newacct/">apply for one online</a>.</p>
+</li>
+<li>
+<p>Once you have an account, you need to <a href="https://mysoc.nus.edu.sg/~myacct/services.cgi">activate your access to the PE hosts</a>, which is part of the SoC computer clusters.</p>
+</li>
+<li>
+<p>You need an <code>ssh</code> client.  macOS and Linux users should already have it installed by default.  Windows 10 users should install <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">the Windows Subsystem for Linux</a> and use Linux.</p>
+</li>
+</ol>
+<p>For older versions of Windows, such as those used in the SoC's programming labs, you can check out <a href="https://www.netsarang.com/products/xsh_overview.html">XShell 6</a> (free for home/school use), or <a href="https://www.putty.org">PuTTY</a>.  These are GUI-based programs so the command lines instructions below do not apply.</p>
+<h2 id="the-command-to-ssh">The Command to SSH</h2>
+<p>Run:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>ssh &lt;username&gt;@pe111.comp.nus.edu.sg
+</code></pre></div>
+</td></tr></table></p>
+<p>Replace <code>&lt;username&gt;</code> with your SoC UNIX username, for instance, I would do:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>ssh ooiwt@pe111.comp.nus.edu.sg
+</code></pre></div>
+</td></tr></table></p>
+<p>After the command above, following the instructions on the screen.  The first time you ever connect to <code>pe111.comp.nus.edu.sg</code>, you will be warned that you are connecting to a previously unknown host.  Say <code>yes</code>, and you will be prompted with your SoC UNIX password.</p>
+<h2 id="accessing-the-pe-hosts-from-outside-soc">Accessing The PE Hosts from Outside SoC</h2>
+<p>The PE hosts can only be accessed from within the School of Computing networks.  If you want to access it from outside, there are several ways.</p>
+<h3 id="option-1-using-soc-vpn">Option 1: Using SoC VPN</h3>
+<p>One way is to set up a Virtual Private Network (VPN) (See <a href="https://dochub.comp.nus.edu.sg/cf/guides/network/vpn">instruction here</a>).  The staff at <code>helpdesk@comp.nus.edu.sg</code> or the IT helpdesk in COM1, Level 1, will be able to help with you setting up if needed.</p>
+<div class="admonition note">
+<p class="admonition-title">SoC VPN vs NUS VPN</p>
+<p>Note that SoC VPN is different from NUS VPN.  Connecting to NUS VPN only allows you access to the NUS internal network, but not the SoC internal network.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Windows 10 Users: FortiClient from Windows Store</p>
+<p>Students have reported that running FortiClient downloaded from the Windows Store does not allow one to <code>ssh</code> from WSL to <code>sunfire</code> as expected.  Therefore, you should download and install For Windows 10 users, please download and install FortiClient VPN directly from <a href="https://forticlient.com/downloads">FortiClient's website</a>.</p>
+</div>
+<h3 id="option-2-tunneling-through-sunfire">Option 2: Tunneling through Sunfire</h3>
+<p>The alternative is to use ssh tunnels.</p>
+<p>SoC's Sunfire (<code>sunfire.comp.nus.edu.sg</code>) is configured to allow your connection if it's originating from a local telco (See <a href="https://dochub.comp.nus.edu.sg/cf/guides/unix/soc_unix_pass_your_direct_access_to_soc_unix_servers">more details here</a>).</p>
+<p>There are two ways to achieve this, and in both ways, it appears to the PE hosts that Sunfire is the client.</p>
+<h4 id="ssh-through-sunfire">SSH through sunfire</h4>
+<p>Connect to sunfire at <code>sunfire.comp.nus.edu.sg</code> via command line <code>ssh</code> with the option <code>-t</code>.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>ssh -t &lt;username&gt;@sunfire.comp.nus.edu.sg ssh pe111.comp.nus.edu.sg
+</code></pre></div>
+</td></tr></table></p>
+<p>Alternatively:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>ssh pe111.comp.nus.edu.sg -J &lt;username&gt;@sunfire.comp.nus.edu.sg
+</code></pre></div>
+</td></tr></table></p>
+<h4 id="ssh-port-forwarding">SSH Port Forwarding</h4>
+<p>SSH has built-in support for local and remote port forwarding, and local port forwarding can be used to connect to the programming environments.  Local port forwarding means that a port of the SSH client (your machine) is forwarded to the SSH server (<code>sunfire</code>), which opens a connection to a preset destination server (e.g., <code>pe111</code>).  This method causes the host to seem as if it is hosted on a local port, e.g. <code>localhost:7000</code>, allowing you to use your favorite SCP program (e.g. <a href="https://filezilla-project.org/">FileZilla</a>) to access the PE host.</p>
+<p>To use local port forwarding (from local port <code>7000</code>), connect to <code>sunfire</code> using
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>ssh -L 7000:pe111.comp.nus.edu.sg:22 &lt;username&gt;@sunfire.comp.nus.edu.sg
+</code></pre></div>
+</td></tr></table>
+This command opens an SSH tunnel from port <code>7000</code> of your machine to port <code>22</code> (the default SSH port) of <code>pe111.comp.nus.edu.sg</code> via <code>sunfire</code>.  After successful login, open a separate SSH (or SCP) connection from your machine to <code>localhost</code> at port <code>7000</code> to access the PE host:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>ssh &lt;username&gt;@localhost -p 7000
+</code></pre></div>
+</td></tr></table>
+<p><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html"><code>PuTTY</code></a> supports SSH port forwarding, so this setup can also be used on Windows.</p>
+<h2 id="setting-up-ssh-keys">Setting up SSH Keys</h2>
+<p>Once you are comfortable with UNIX, you can set up a pair of public/private keys for authentication.  </p>
+<p>You can use
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>ssh-keygen -t rsa
+</code></pre></div>
+</td></tr></table></p>
+<p>to generate a pair of keys on your local computer.  Keep the private key <code>id_rsa</code> on your local machine in the hidden <code>~/.ssh</code> directory, and copy the public key <code>id_rsa.pub</code> to your home directory on PE <code>pe111</code>.  On <code>pe111</code>, run
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>cat id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys
+</code></pre></div>
+</td></tr></table></p>
+<p>Make sure that the permission for <code>.ssh</code> both on the local machine and on PE are set to <code>700</code> and the files <code>id_rsa</code> on the local machine and <code>authorized_keys</code> on the remote machine are set to <code>600</code>.  Once set up, you need not enter your password every time you run <code>ssh</code> or <code>scp</code>.  </p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>Suppose you try to connect to <code>pe111</code> using either:
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>ssh pe111.comp.nus.edu.sg
+ssh -t sunfire.comp.nus.edu.sg ssh pe111.comp.nus.edu.sg
+ssh pe111.comp.nus.edu.sg -J sunfire.comp.nus.edu.sg
+</code></pre></div>
+</td></tr></table>
+and you get the following error:</p>
+<ol>
+<li>
+<p><code>ssh: Could not resolve hostname pe111.comp.nus.edu.sg</code></p>
+<p><code>ssh</code> cannot recognize the name <code>pe111</code>, it is likely that you are not connected to the SoC VPN.</p>
+</li>
+<li>
+<p><code>Connection closed by 192.168.48.xxx port 22</code></p>
+<p>You have connected to the PE host, but you are kicked out because you have no permission to use the host.</p>
+<p>Make sure you have activated your access to "SoC computer clusters" here: <a href="https://mysoc.nus.edu.sg/~myacct/services.cgi">https://mysoc.nus.edu.sg/~myacct/services.cgi</a></p>
+</li>
+<li>
+<p><code>Permission denied, please try again</code></p>
+<p>You did not enter the correct password or username.  Please use the username and password 
+of your SoC UNIX account which you have created here: <a href="https://mysoc.nus.edu.sg/~newacct/">https://mysoc.nus.edu.sg/~newacct/</a>.   </p>
+<p>Check that you have entered your username correctly.  It is <em>case sensitive</em>.</p>
+<p>If you have lost your password, go here: <a href="https://mysoc.nus.edu.sg/~myacct/iforgot.cgi">https://mysoc.nus.edu.sg/~myacct/iforgot.cgi</a></p>
+</li>
+<li>
+<p><code>ssh: connect to host sunfire.comp.nus.edu.sg port 22: Operation timed out</code></p>
+<p>It means that you failed to connect to <code>sunfire</code> via <code>ssh</code>.  There could be two reasons for this: (i) <code>sunfire</code> or its ssh service is down; (ii) you are connecting via a network where <code>sunfire</code> is not accessible (such as outside Singapore).  </p>
+<p>The likelihood of (i) is small.  The more likely scenario is (ii), in which case, you should be able to solve it by connecting to NUS or SoC VPN.</p>
+</li>
+<li>
+<p><code>Could not chdir to home directory /home/o/ooiwt: Permission denied</code></p>
+<p>This error means that you have successfully connect to the PE hosts, but you have no access to your own home directory. </p>
+<p>This should not happen.  Please send an email with the above error message to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#64;&#99;&#111;&#109;&#112;&#46;&#110;&#117;&#115;&#46;&#101;&#100;&#117;&#46;&#115;&#103;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#64;&#99;&#111;&#109;&#112;&#46;&#110;&#117;&#115;&#46;&#101;&#100;&#117;&#46;&#115;&#103;</a>, include the PE hosts that you
+connected to with this error and your username.  The system administrator can reset the permission of your home directory for you.</p>
+</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="messages.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Compiler Messages
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="unix.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                UNIX
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright by Department of Computer Science, National University of Singapore 2020
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+    
+  </body>
+</html>
