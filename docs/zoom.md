@@ -41,4 +41,4 @@ through a Web browser.
 
 ## Links to Join Zoom
 
-The Zoom session information is shared privately on [Piazza](https://piazza.com/class/kdgunoizhic105?cid=7).
+The Zoom session information is shared privately on [Piazza](https://piazza.com/class/kjjjionq2kg1e6?cid=7).
