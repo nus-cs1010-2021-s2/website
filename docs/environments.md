@@ -21,7 +21,7 @@ While it is possible for you to complete the programming assignments on your own
 
 2. Once you have an account, you need to [activate your access to the PE hosts](https://mysoc.nus.edu.sg/~myacct/services.cgi), which is part of the SoC computer clusters.
 
-3. You need an `ssh` client.  macOS and Linux users should already have it installed by default.  Windows 10 users should install [the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and use Linux.
+3. You need an `ssh` client.  macOS and Linux users should already have it installed by default.  Windows 10 users should have it, too, through an update back in 2018. Please type ssh in your command prompt to confirm. If it is not available, you might want to update your Windows 10 or install [the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and use Linux.
 
 For older versions of Windows, such as those used in the SoC's programming labs, you can check out [XShell 6](https://www.netsarang.com/products/xsh_overview.html) (free for home/school use), or [PuTTY](https://www.putty.org).  These are GUI-based programs so the command lines instructions below do not apply.
 
@@ -149,4 +149,4 @@ of your SoC UNIX account which you have created here: https://mysoc.nus.edu.sg/~
 	connected to with this error and your username.  The system administrator can reset the permission of your home directory for you.
 
 
-    
+​    

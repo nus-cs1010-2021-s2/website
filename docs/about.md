@@ -11,7 +11,7 @@ This module introduces the fundamental concepts of problem solving by computing 
 - **Lecture Time**: Monday, 2 - 4pm
 - **Consultation Time**: By appointment 
 - **Student Tutors**:
-- Felix Halim
+    - Felix Halim
     - Francisco Chensan
     - Gizem Balikci
     - Guo Ai
@@ -26,7 +26,7 @@ This module introduces the fundamental concepts of problem solving by computing 
 ## Important Dates
 
 - **Midterm Assessment**: Monday, 1 March, 2021 (2 - 4pm)
-- **Final Assessment**: Thursday, 29 April, 2021 (5pm - 7pm)
+- **Final Assessment**: Thursday, 29 April, 2021 (9 - 11 am)
 - **Practical Exam 1**: Saturday, 6 March, 2021 (9am - 12noon)
 - **Practical Exam 2**: Saturday, 10 April, 2021 (9am - 12noon)
 

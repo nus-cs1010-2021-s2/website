@@ -15,7 +15,7 @@ After this unit, students should:
 
 So, what is computational problem solving?  Let's start with the question, what is a _computational problem_?  
 
-A computational problem is a problem that can be solved step-by-step with a computer.  These problems usually have a well-defined input, constraints, and conditions that the output must satisfied.  Here are some types of computational problems:
+A computational problem is a problem that can be solved step-by-step with a computer.  These problems usually have well-defined inputs, outputs and constraints that the outputs must satisfied.  Here are some types of computational problems:
 
 - A _decision problem_ is one where the answer is yes or no.  For instance, "given a number $n$, is $n$ even?" is a decision problem.  Some decision problems take more steps to solve than others.  For instance, "given a number $n$, is $n$ prime?" takes more steps than just checking the parity of a number.
 
@@ -102,21 +102,21 @@ At the beginning, just before entering "$i$ equals $k$?", we have the following:
 
 | Integers Scanned | $i$ | $l_i$ | $k$ | Maximum So Far ($m$) |
 |------------------|-----|-------|-----|----------------|
-| `4` | `1` | `1` | `9` | `4` | 
+| `4` | `1` | `1` | `9` | `4` |
 
 Subsequently, we enter a "loop", and the values assigned to the symbols at the point after "$i$ equals $k$?" can be traced as follows:
 
 | Integers Scanned | $i$ | $l_i$ | $k$ | Maximum So Far ($m$) |
 |------------------|-----|-------|-----|----------------|
-| `4 1` | `1` | `1` | `9` | `4` | 
+| `4 1` | `1` | `1` | `9` | `4` |
 | `4 1 -4` | `2` | `-4` | `9` | `4` |
-| `4 1 -4 0` | `3` | `0` | `9` | `4` | 
-| `4 1 -4 0 9` | `4` | `9` | `9` | `4` | 
-| `4 1 -4 0 9 9` | `5` | `9` | `9` | `9` | 
-| `4 1 -4 0 9 9 3` | `6` | `3` | `9` | `9` | 
-| `4 1 -4 0 9 9 3 5` | `7` | `5` | `9` | `9` | 
-| `4 1 -4 0 9 9 3 5 8` | `8` | `8` | `9` | `9` | 
-| `4 1 -4 0 9 9 3 5 8` | `9` | `` | `9` | `9` | 
+| `4 1 -4 0` | `3` | `0` | `9` | `4` |
+| `4 1 -4 0 9` | `4` | `9` | `9` | `4` |
+| `4 1 -4 0 9 9` | `5` | `9` | `9` | `9` |
+| `4 1 -4 0 9 9 3` | `6` | `3` | `9` | `9` |
+| `4 1 -4 0 9 9 3 5` | `7` | `5` | `9` | `9` |
+| `4 1 -4 0 9 9 3 5 8` | `8` | `8` | `9` | `9` |
+| `4 1 -4 0 9 9 3 5 8` | `9` | `` | `9` | `9` |
 
 Please spend some time to trace through the flowchart above.
 
