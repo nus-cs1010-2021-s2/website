@@ -1132,9 +1132,9 @@ as part of the string!</p>
 <h2 id="problem-set-16">Problem Set 16</h2>
 <h3 id="problem-161">Problem 16.1</h3>
 <p>Write the following functions (without calling the standard C functions declared in <code>&lt;string.h&gt;</code> such as <code>strlen</code>, <code>strcmp</code>, <code>strstr</code>):</p>
-<p>(a) <code>long string_length(char *str)</code> return the length (i.e., the number of characters) of the string <code>str</code>.</p>
-<p>(b) <code>bool string_equal(char *str1, char *str2)</code> return <code>true</code> if the two strings <code>str1</code> and <code>str2</code> contains exactly the same content, <code>false</code> otherwise.  (Note: <code>str1 == str2</code> does not compare if two strings have the same content. (Why?))</p>
-<p>(c) <code>char *string_in_string(char *needle, char *haystack)</code> returns a pointer to the first character of the first occurrence of <code>needle</code> in <code>haystack</code> if found.  If <code>needle</code> does not occur anywhere in <code>haystack</code>, return NULL.  If <code>needle</code> is an empty string, <code>haystack</code> is returned.</p>
+<p>(a) <code>long string_length(char str[])</code> or <code>long string_length(char *str)</code> returns the length (i.e., the number of characters) of the string <code>str</code>.</p>
+<p>(b) <code>bool string_equal(char str1[], char str2[])</code> or  <code>bool string_equal(char *str1, char *str2)</code> returns <code>true</code> if the two strings <code>str1</code> and <code>str2</code> contains exactly the same content, <code>false</code> otherwise.  (Note: <code>str1 == str2</code> does not compare if two strings have the same content. (Why?))</p>
+<p>(c) <code>char *string_in_string(char needle[], char haystack[])</code> or <code>char *string_in_string(char *needle, char *haystack)</code> returns a pointer to the first character of the first occurrence of <code>needle</code> in <code>haystack</code> if found.  If <code>needle</code> does not occur anywhere in <code>haystack</code>, return NULL.  If <code>needle</code> is an empty string, <code>haystack</code> is returned.</p>
                 
               
               
