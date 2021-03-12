@@ -548,6 +548,45 @@
   </li>
 
         
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="20-macro.html" class="md-nav__link">
+      20. C Preprocessing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="21-assert.html" class="md-nav__link">
+      21. The assert macro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="22-efficiency.html" class="md-nav__link">
+      22. Efficiency
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -719,6 +758,19 @@
   <li class="md-nav__item">
     <a href="as04.html" class="md-nav__link">
       4. SelectionSort, Mastermind
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="as05.html" class="md-nav__link">
+      5. Contact, Social, Life
     </a>
   </li>
 
@@ -1227,7 +1279,6 @@ In each loop, it finds the index of the maximum element among list[0] to list[le
 <div class="arithmatex">\[
 \sum_{i=0}^{n} (n - i) = (n+1)^2 - \frac{n(n+1)}{2} = \frac{n^2 + n}{2} = O(n^2)
 \]</div>
-<p><ins class="critic">An earlier version of the note incorrectly express $\sum_{i=0}^n{n} as <span class="arithmatex">\(n^2\)</span>.</ins></p>
 <p>So selection sort takes O(n^2) time.</p>
 <h2 id="selection-vs-counting-sort">Selection vs Counting Sort</h2>
 <p>Comparing the running of counting sort <span class="arithmatex">\(O(n + MAX)\)</span> vs selection sort <span class="arithmatex">\(O(n^2)\)</span>, it is clear that counting sort is more efficient -- we say that counting sort is a <em>linear time</em> algorithm and selection sort is a <em>quadratic time</em> algorithm.</p>
@@ -1378,11 +1429,6 @@ In each loop, it finds the index of the maximum element among list[0] to list[le
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<p><ins class="critic">Fix</ins> The original code uses the following as loop condition
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>  while (temp &lt; a[i] &amp;&amp; i &gt;= 0) { .. }
-</code></pre></div>
-</td></tr></table>
-which causes an access to <code>a[-1]</code>.  Even though this value is eventually discarded, to be polite we should not access memory locations where we have no permission to.</p>
 <h2 id="animation">Animation</h2>
 <p>Animations for various sorting algorithms, including some which you will learn in CS2040C, are available online on <a href="https://visualgo.net/bn/sorting">VisuAlgo</a></p>
 <h2 id="problem-set-24">Problem Set 24</h2>
