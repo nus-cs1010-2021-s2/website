@@ -1,4 +1,4 @@
-# Unit 12: Reasoning About Loops
+# Unit 12: Loop Invariant
 
 ## Learning Objectives
 

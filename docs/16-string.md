@@ -97,8 +97,8 @@ The CS1010 I/O library provides two functions, one to read a word (separated by 
 
 Write the following functions (without calling the standard C functions declared in `<string.h>` such as `strlen`, `strcmp`, `strstr`):
 
-(a) `long string_length(char *str)` return the length (i.e., the number of characters) of the string `str`.
+(a) `long string_length(char str[])` or `long string_length(char *str)` returns the length (i.e., the number of characters) of the string `str`.
 
-(b) `bool string_equal(char *str1, char *str2)` return `true` if the two strings `str1` and `str2` contains exactly the same content, `false` otherwise.  (Note: `str1 == str2` does not compare if two strings have the same content. (Why?))
+(b) `bool string_equal(char str1[], char str2[])` or  `bool string_equal(char *str1, char *str2)` returns `true` if the two strings `str1` and `str2` contains exactly the same content, `false` otherwise.  (Note: `str1 == str2` does not compare if two strings have the same content. (Why?))
 
-(c) `char *string_in_string(char *needle, char *haystack)` returns a pointer to the first character of the first occurrence of `needle` in `haystack` if found.  If `needle` does not occur anywhere in `haystack`, return NULL.  If `needle` is an empty string, `haystack` is returned.
+(c) `char *string_in_string(char needle[], char haystack[])` or `char *string_in_string(char *needle, char *haystack)` returns a pointer to the first character of the first occurrence of `needle` in `haystack` if found.  If `needle` does not occur anywhere in `haystack`, return NULL.  If `needle` is an empty string, `haystack` is returned.

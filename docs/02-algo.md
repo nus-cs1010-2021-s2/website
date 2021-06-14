@@ -154,7 +154,7 @@ In the problem set at the end of this lecture, you will see slight variations of
 
 ## Problem Set
 
-#### Problem 1.1 
+#### Problem 2.1 
 
 The following algorithms are slight variations of the one in the notes above.  The differences are highlighted in red.  Do they correctly find the maximum integer from a finite list of $k$ integers ($k > 0$)?  
 
@@ -175,10 +175,10 @@ If an algorithm is buggy, give a counter-example where the output is incorrect. 
 (e) 
 ![Flowchart](figures/max-flowchart/max-flowchart.006.png)
 
-#### Problem 1.2
+#### Problem 2.2
 
 Change the algorithm above to find the minimum value instead of the maximum value from the given list $L = \langle l_0, ..., l_{k-1}\rangle$. You can also assume that the list $L$ is finite and $k > 0$ for this question.
 
-#### Problem 1.3
+#### Problem 2.3
 
 Draw the flowchart for an algorithm, that takes in a list of integers $L = \langle l_0, ..., l_{k-1}\rangle, k > 0$, and compute the _sum_ of all the integers.  Think about what variable(s) do you need.

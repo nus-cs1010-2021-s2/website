@@ -118,12 +118,12 @@ The Big-O function is a mathematical function that computer scientists use to ch
 !!! tips "Formal definition"
 
     For those mathematically inclined students who can't wait until CS2040C or CS3230 for
-	a formal definition, here it is:
-
-	Given two functions $f$ and $g$, we say that $f(x) = O(g(x))$ if the exists
-	a position real number $c$ and a real number $x_0$ such that
-
-	$$ |f(x)| \le cg(x), \,\,  \forall x \ge x_0$$
+    a formal definition, here it is:
+    
+    Given two functions $f$ and $g$, we say that $f(x) = O(g(x))$ if the exists
+    a position real number $c$ and a real number $x_0$ such that
+    
+    $$ |f(x)| \le cg(x), \,\,  \forall x \ge x_0$$
 
 To motivate Big-O, let's consider how we can count the number of "steps" taken by an algorithm.  Let's consider this again:
 
@@ -135,7 +135,7 @@ To motivate Big-O, let's consider how we can count the number of "steps" taken b
   }
 ```
 
-If we consider each of the fundamental operations: comparison, addition, and assignment, as a step, then we can see that, in each loop, there is one comparison (`i != n`), two additions (`i + 1`, `third = first + second`), four assignments.  So we have seven operations per loop, with a total of $n-1$ loops.  So we have $7n - 7$ operations.  In addition, we also need to count for the assignment `i = 2` and the additional comparison before we exit the loop (`i != n`).  So, in total, we have $7n - 5$ operations.
+If we consider each of the fundamental operations: comparison, addition, and assignment, as a step, then we can see that, in each loop, there is one comparison (`i != n`), two additions (`i + 1`, `third = first + second`), four assignments.  So we have seven operations per loop, with a total of $n-2$ loops.  So we have $7n - 14$ operations.  In addition, we also need to count for the assignment `i = 2` and the additional comparison before we exit the loop (`i != n`).  So, in total, we have $7n - 12$ operations.
 
 As you can see, such detailed counting of the steps in tedious, and in fact, not very meaningful.  For instance, we did not account for reading values from the memory and writing of values into the memory, the performance of which becomes dependant on the architecture underneath.  
 
@@ -179,7 +179,7 @@ long count_inversion(long i, long n, const long rank[])
   long count = 0;
   for (long j = i + 1; j < n; j += 1) {
     if (rank[i] > rank[j]) {
-      count ++;
+      count += 1;
     }
   }
   return count;

@@ -1,4 +1,4 @@
-# Unit 14: Memory Addresses or Pointers
+# Unit 14: Pointers
 
 ## Learning Objectives
 

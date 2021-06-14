@@ -21,7 +21,7 @@ The placeholder `%s` is called a _format modifier_.  It controls how to interpre
 %[flags][field_width][.precision][length_modifier]specifier
 ```
 
-The {--letter after `%`--} {++specifier++}  controls the interpretation of the argument.  `s` for string, `c` for character, `d` for integer (base 10), `f` for floating-point number, `p` for pointer (base 16).  We can additionally prepend this with _length modifier_.  `ld` for `long` integer, `lld` for `long long`, and `lf` for `double`.
+The specifier  controls the interpretation of the argument.  `s` for string, `c` for character, `d` for integer (base 10), `f` for floating-point number, `p` for pointer (base 16).  We can additionally prepend this with _length modifier_.  `ld` for `long` integer, `lld` for `long long`, and `lf` for `double`.
 
 To format the output, we can prepend it with a number to indicate its _field width_, or minimum space used when printing.  E.g., `%3d` will pad the number printed with space if the number printed is less than 3 digits.  Adding a _flag_ 0 in front, `%03d`, will pad the number with 0s if the number printed is less than 3 digits.  Other flags include `+`, which tells `printf` to print a sign (`+` or `-`) for the number.  For floating-point numbers, we can additionally control the _precision_, or the number of digits printed after the decimal point.  `%3.4lf` will print a double to four decimal points.
 
@@ -156,7 +156,7 @@ Let's say we do:
 
 ```C
 char name[10];
-printf("What's your name?", name);
+printf("What's your name?");
 scanf("%s", name);
 printf("Hello %s!\n", name);
 ```

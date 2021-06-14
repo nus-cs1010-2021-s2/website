@@ -96,13 +96,13 @@ Let's see how we ensure this assertion is true in the recursive call.
        :
 ```
 
-Line 3 of the snippet above is invoked only if `list[mid] > q`.  Since the array `list` is sorted, we know for sure that any element in `list[mid+1]`..`list[j]` is larger than $q$.  So, $q$ cannot be anywhere in that range.  We can assert, between {--Line 3 and Line 4--} Lines 2 and 3 above:
+Line 3 of the snippet above is invoked only if `list[mid] > q`.  Since the array `list` is sorted, we know for sure that any element in `list[mid+1]`..`list[j]` is larger than $q$.  So, $q$ cannot be anywhere in that range.  We can assert, between Lines 2 and 3 above:
 
 ```C
 // { q is not in list[0]..list[i-1] and list[mid]..list[n-1] }
 ```
 
-Thus, when {--Line 4--} Line 3 is invoked, the same assertion holds true.  You can apply the same argument to the call:
+Thus, when Line 3 is invoked, the same assertion holds true.  You can apply the same argument to the call:
 
 ```C
   return search(list, mid+1, j, q);
@@ -145,12 +145,11 @@ With a sorted input and using binary search, however, we can do a better.  Let's
 
 ### Problem 23.1
 
-{-- (a) 
-{Rewrite the code for binary search above using a loop instead of recursion.--}
+(a) Write the code for performing binary search using loops. Identify the loop invariant and explain why the code works.
 
-(b) 
-Instead of returning the position of the query `q`, modify {--the binary search algorithm in (a)--} an iterative version of the binary search such that it returns either:
+(b) Instead of returning the position of the query `q`, modify binary search such that it returns the insert position of q as described below:
 
-- a position `k`, such as `a[k] <= q <= a[k+1]`. 
+- a position `k`, such that `a[k] <= q <= a[k+1]`. 
 - -1 if `q < a[0]` 
-- {++n-1 if++} `q > a[n-1]`
+- n-1 if `q > a[n-1]`
+

@@ -1,4 +1,4 @@
-# Unit 9: Logical Expression
+# Unit 9: Logical Expressions
 
 ## Learning Objectives
 

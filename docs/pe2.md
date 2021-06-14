@@ -2,9 +2,10 @@
 
 ## Basic Info
 
-- Date: 7 November 2020 (Saturday)
+- Date: 10 April 2021 (Saturday)
 - Time: 9 am to 12noon (Report to invigilator at 9 am, exam starts at 9:30am)
-- Venue: Online 
+- Format: Face-to-face.
+- Venue: PL1/PL2
 - Scope: Units 1-27, Assignments 1-8, Tutorials 1-10
 - 5 programming questions: from very easy to very hard
 - Criteria: correctness, style, efficiency, and documentation.  These are applied differently to different question (e.g., efficiency is important only for some questions, documentation is required only for some questions).
@@ -13,11 +14,12 @@
 
 ## Special Restrictions
 
-- You will be issued a special account for use on the day of the practical exam.   This will been sent to your NUS email account and you should will get a chance to test it during Thursday's tutorial session. 
-
+- Remember to bring your student card for verification purposes.
+- You will need to attend the PE at a specific programming lab. Please refer to the Allocation Section below for more information.
+- You will be issued a special account on the actual day for the practical exam. 
 - You will need to log into a special set of PE nodes through `ssh` to solve the exam questions.  
-
-- You are not allowed to use the Internet for other purposes.  You are only allowed to (i) interact with the files on the PE nodes through `ssh`; and (ii) communicate with the invigilators through Zoom.  File transfer into the PE nodes is not allowed.  
+- You are not allowed to use the Internet for other purposes.  You are only allowed to (i) interact with the files on the PE nodes through `ssh`; and (ii) communicate with the invigilators.  File transfer into the PE nodes is not allowed.  
+- You are allowed to ask clarification questions during the exam.  However, you may only ask a boolean yes/no question.  For instance, you are not allowed to ask "What can we assume about the input?".  You should rephrase it as "Can we assume that the input is always positive?".  Our answers will only be in the form of "yes", "no", "no comment".
 
 ## Vim Configuration
 
@@ -27,63 +29,14 @@ You are free to edit this during the practical exams.
 
 You, however, will not be able to download nor install `vim` plugins.
 
-## E-Exam Procedure
+## Allocation
 
-We adopt the [E-exam procedure for the School of Computing](https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/) for CS1010.  This is a long document with a lot of information.  Please read through it carefully.  Please set up the software and hardware needed for taking e-exams before the test so that your test-taking experience is as smooth as possible.
-
-Note the following supplementary information to complete the E-exam procedure above, specific to CS1010.
-
-### 2.1 Exam Taking Software
-
-   You will use a terminal to `ssh` into your allocated PE nodes to take the practical exam.
-
-    You can only access the PE nodes for examination through either SoC VPN or tunnels through sunfire. 
-
-### 2.2 Proctoring Protocol
-
-   Note that the following applies to CS1010:
-
-   - You are allowed to use only a single screen. If you’re using an external monitor, the laptop screen must be switched off.
-   - The terminal running on your PC must be in full-screen mode.  Terminal window/tab other than the one used to connect to the PE nodes are not allowed.  
-   - You are allowed only one full-screen terminal window.  You may use split windows within `vim` to view the exam questions and your code side-by-side.
-   - If you need to switch to other Windows (e.g., Zoom chat to ask question), you need to get permission from the invigilator.
-   - {++ Do note that failure to comply with proctoring requirements may require you to retake PE2 ++}
-
-### 2.4. Seeking Clarifications on Exam Questions
-
-   You are allowed to ask clarification questions during the exam.  However, you may only ask a boolean yes/no question.  For instance, you are not allowed to ask "What can we assume about the input?".  You should rephrase it as "Can we assume that the input is always positive?".  Our answers will only be in the form of "yes", "no", "no comment".
-
-### 2.5. Multi-part Exam
-
-   There is only a single part with no break in between.
-
-### 9.6. Completion of Exam
-
-   The folder to submit the your recording to is LumiNUS> CS1010 > Files > PE2 Screen Capture Video Submission.  You should submit it no later than 7 November 2020, 2359.  Note that failure to submit equates to you not being proctored for Practical Examination 2.
- 
-## Zoom Session Assignment
-
-- [Group assignment](https://luminus.nus.edu.sg/modules/c7b362a0-6aee-4b22-b4da-f9e8074249fd/groups/class-groups/c9273adc-94e7-4c08-90d9-a764182aea6c) is available on Luminus.
-
-- {++ Zoom sessions are available on [Piazza](https://piazza.com/class/kdgunoizhic105?cid=693) ++}
+- T01/T03/T04: PL2 @ COM1-B109
+- T05/T07/T10/T11: PL1 @ COM1-B112
 
 ## Invigilators
 
-TBD
-
-## Emergency Contact (Examination issues)
-
-- Zoom Chat (when permission is given by the proctor)
-- If Zoom fails, MS Teams (when permission is given by the proctor)
-- If Zoom/Teams fail, as a last resort, you may email the instructors/proctors
-- Find Proctor and Instructor Email Information on LumiNUS > CS1010 > Module Details > Facilitators (Top Menu) (note down the email before the exam in case Luminus fails)
-
-##  Emergency Contact for Technical Issues 
-
-- School of Computing - Technical Services
-- Telephone: 6516 2736
-- Email: techsvc@comp.nus.edu.sg
-- Emergency Telephone: 6874 2736 (available only during emergencies and network outages)
+Adhy, Gizem, Felix, Francisco, Jusuf
 
 ## General Advice
 
@@ -98,10 +51,14 @@ TBD
 
 ## Practice Paper
 
-You can use the PE question from 18/19 Semester 1 as the practice paper.
+You can use the PE question from 20/21 Semester 2 as the practice paper.
 
-- Download the [question paper](https://www.comp.nus.edu.sg/~ooiwt/cs1010/1819s1/pe2.pdf)
-- [Accept the assignment](https://classroom.github.com/a/o4OHFC_V) on GitHub
-- Run `~cs1010/get-pe19` on any PE host to get the skeleton code and test cases
-- Run `~cs1010/submit-pe19` to submit/archive your solution on GitHub
+- [Accept the assignment](https://classroom.github.com/a/sNLHuLM9) on GitHub
+- Run `~cs1010/get-pe99` on any PE host to get the skeleton code and test cases
+- Run `~cs1010/submit-pe99` to submit/archive your solution on GitHub
 
+You can now re-attempt the PE questions of this semester for your own practice.
+
+- [Accept the assignment](https://classroom.github.com/a/VkQyAB-n) on GitHub
+- Run `~cs1010/get-pe02` on any PE host to get the skeleton code and test cases
+- Run `~cs1010/submit-pe02` to submit/archive your solution on GitHub

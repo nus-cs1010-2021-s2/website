@@ -2,8 +2,8 @@
 
 ## Important Information
 
-- Date: 28 September 2020 (Monday)
-- Time: 12noon to 2 pm
+- Date: 1 March 2021 (Monday)
+- Time: 2 to 4 pm
 - Venue: Online
 - Scope: Units 1-12, Assignments 1-2, Tutorials 1-4
 - Format: MCQs and Short Structured Questions
@@ -36,12 +36,21 @@ Note the following supplementary information to complete the E-exam procedure ab
 
    CS1010 midterm is only a single part with no break in between.
 
-## Zoom Session Assignment
+## Zoom Session
 
-- Zoom session assignment is available internally via [LumiNUS](https://luminus.nus.edu.sg/modules/c7b362a0-6aee-4b22-b4da-f9e8074249fd/groups/class-groups/54a078dc-b356-4a89-836e-a90f3c5ff7f5)
+- There will be only 1 Zoom session and the link will be announced on the day itself via LumiNUS announcements.
+- **(New!)** Note that you will definitely need to login to the Zoom meeting from your PC to hear the instructions / ask questions. If you are recording from your phone, you will need to login to the meeting on your phone as well.
+- **(New!)** Don't for get to try the setup (video recording / screen capturing) beforehand!
+- **(New!)** You should rename yourself to include your tutorial group (e.g., T00 - Zhao Jin) once you have entered the Zoom meeting.
 
-- Zoom link available via [Piazza](https://piazza.com/class/kdgunoizhic105?cid=301)
+## Invigilators
 
-## Invigilators and Email Address
+Adhy, Gizem, Jusuf
 
-Invigilators list available on [Piazza](https://piazza.com/class/kdgunoizhic105?cid=301)
+
+## Screen Capture Videos
+
+- The screen video captures should be submitted to LumiNUS Files -> Student Submissions -> Midterm Screen Capture Video Submission by the end of the day itself.
+
+
+

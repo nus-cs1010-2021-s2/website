@@ -2,7 +2,7 @@
 
 ## Timeline
 
-There will be weekly take-home programming assignments starting from Week 4, each consisting of 1 to 4 questions. 
+There will be weekly take-home programming assignments starting from (the end of) Week 4, each consisting of 1 to 4 questions. 
 These programming assignments collectively contribute to 30% of your final grade.
 
 The programming assignment is released on the CS1010 website every Friday afternoon with a deadline given.  You must submit all questions for each particular programming assignment before the deadline.

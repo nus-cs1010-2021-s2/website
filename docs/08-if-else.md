@@ -1,4 +1,4 @@
-# Unit 8: Conditional Statement
+# Unit 8: Conditional Statements
 
 ## Learning Objectives
 
